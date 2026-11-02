@@ -1,0 +1,42 @@
+.project {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project h2 {
+    opacity: 0;
+    margin-bottom: var(--space__lg);
+}
+
+.project h2.fade__in {
+    animation: to__top 1s ease-out forwards;
+}
+
+.project__container {
+    opacity: 0;
+    width: var(--size__full);
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space__md);
+}
+
+.project__container.fade__in {
+    animation: to__top 1s ease-out forwards 0.1s;
+}
+
+@media(max-width: 1024px) {
+    .project__container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media(max-width: 768px) {    
+    .project__container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+

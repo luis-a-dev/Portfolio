@@ -1,0 +1,33 @@
+.footer {
+    background-color: #0c0c0c;
+    width: var(--size__full);
+    height: var(--size__md);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer small {
+    color: var(--text__muted);
+}
+
+.footer .social__network {
+    display: flex;
+    gap: var(--space__xs);
+}
+
+.social__network .icon {
+    display: grid;
+    place-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.social__network .icon:hover {
+    background-color: var(--bg__muted);
+}
+
+.social__network .icon svg{
+    width: 1.8rem;
+    height: 1.8rem;
+}

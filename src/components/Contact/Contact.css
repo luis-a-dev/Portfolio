@@ -1,0 +1,103 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__me {
+    display: grid;
+    grid-template-columns: 50vw 30vw;
+    gap: var(--space__xl);
+
+}
+
+.contact h2 {
+    margin-bottom: var(--space__md);
+}
+
+.contact p {
+    margin-bottom: var(--space__xl);
+}
+.contact__container {
+    border: 1px solid hsl(0, 0%, 15%);
+    padding: var(--space__lg);
+    border-radius: calc(var(--radius) - 2px);
+    box-shadow: 0 4px 8px #0b0b0b;
+}
+
+.contact__column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space__md);
+}
+
+.contact__box {
+    display: flex;
+    flex-direction: column;
+    width: var(--size__full);
+}
+
+.contact__box label{
+    font-family: inherit;
+    font-weight: 900;
+}
+
+.contact__box input, textarea{
+    padding: var(--space__sm) calc(var(--space__sm) + var(--space__xs));
+    margin-top: var(--space__md);
+    width: var(--size__full);
+    height: 2.5rem;
+    border-radius: calc(var(--radius) - 2px);
+    border: 1px solid hsl(0, 0%, 15%);
+    font-family: inherit;
+}
+
+.contact__box:nth-child(n){
+    margin-top: var(--space__lg);
+}
+
+.contact__column > .contact__box, 
+.contact__info .contact__container *{
+    margin: 0;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space__md);
+    font-style: normal;
+}
+
+.contact__icon {
+    background-color: var(--bg__muted);
+    display: grid;
+    place-content: center;
+}
+
+.contact__info .contact__container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space__md);
+    align-items: center;
+}
+
+.contact__info .contact__container .contact__label {
+    margin-bottom: var(--space__xs);
+    font-weight: 700;
+}
+
+@media(max-width: 992px) {
+    .contact__me {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space__xl);
+    }
+
+    .contact__info .contact__container {
+        flex-direction: column;
+        gap: var(--space__md);
+        text-align: center;
+    }
+}

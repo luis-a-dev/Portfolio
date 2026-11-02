@@ -1,21 +1,13 @@
 # Dependencias
 node_modules/
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
 
 # Build y cache
 dist/
 dist-ssr/
 .cache/
-out/
 .temp/
 coverage/
-public/
 .vite/
-.next/
-.nuxt/
-.svelte-kit/
 
 # Configuración local y entorno
 .env
@@ -33,9 +25,6 @@ yarn-debug.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Archivos de lock para evitar conflictos
-*.lock
-
 # Archivos de sistemas y editores
 .DS_Store
 Thumbs.db
@@ -52,6 +41,3 @@ Thumbs.db
 *.ntvs*
 *.njsproj
 *.sln
-
-# Archivos específicos de Git
-.git/
